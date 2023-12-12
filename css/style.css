@@ -416,6 +416,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   width: 19px;
   height: 19px;
+  /* position: relative; */
 }
 
 .dot::after {
@@ -880,9 +881,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer-img {
-  /* height: 40px; */
   object-fit: contain;
-  max-width: 350px;
+  max-width: 300px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
@@ -1150,4 +1150,70 @@ body::-webkit-scrollbar-thumb {
 .mobilepro-img {
   width: 100%;
   object-fit: cover;
+}
+
+
+/* test  */
+.test-timeline {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.test-step {
+  font-family: "Inter";
+  font-weight: 700;
+  text-align: center;
+}
+
+.test-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.test-dot {
+  display: table;
+  background-image: linear-gradient(171deg,
+      #0094cb 0%,
+      #4acf78 71%,
+      #0094cb 100%);
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  /* position: relative; */
+}
+
+.test-dot::after {
+  content: '';
+  position: absolute;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="2" width="90" viewBox="0 0 100 2"><line x1="0" y1="1" x2="100" y2="1" stroke="%230094cb" stroke-width="2" stroke-dasharray="4" /></svg>');
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 2px;
+  top: 30%;
+  z-index: -1;
+}
+
+
+
+
+.test-year {
+  font-family: "Inter";
+  font-weight: 700;
+  color: #0094CB;
+  margin-top: 10px;
+}
+
+.test-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-align: center;
 }
