@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Government</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <navbar class="header-navbar">
+        <div class="header-info">
+          <a href=""><img src="./img/logo.png" alt="" class="header-logo" /></a>
+          <div>
+            <h1 class="header-title">ЦифровоЕ правительствО</h1>
+            <h1 class="header-title">Республики Узбекистан</h1>
+          </div>
+        </div>
+        <div class="header-links">
+          <a href="#" class="burger-menu">
+            <img class="burger-icon" src="./img/Shape.png" alt="" />
+            <img class="close-icon" src="./img/close.png" alt="" />
+          </a>
+          <ul class="header-menu">
+            <li><a href="#" class="header-link">Главная</a></li>
+            <li><a href="#" class="header-link">Решения</a></li>
+            <li><a href="#" class="header-link">Рейтиги</a></li>
+            <li><a href="#" class="header-link">Контакты</a></li>
+            <div class="language-dropdown">
+              <p class="active-language" id="currentLanguage">
+                РУ <span> <i class="fas fa-arrow-down"></i></span>
+              </p>
+              <ul class="language-switch" id="languageList">
+                <li><a href="#" class="language-link">УЗ</a></li>
+              </ul>
+            </div>
+          </ul>
+          <div class="mobile-nav">
+            <ul class="mobile-lang">
+              <li class="lang-link">UZ</li>
+              <li class="lang-link lang-link-active">РУ</li>
+              <li class="lang-link">EN</li>
+            </ul>
+            <ul class="mobile-menu">
+              <li><a href="" class="mobile-link">Решения</a></li>
+              <li><a href="" class="mobile-link">Рейтиги</a></li>
+              <li><a href="" class="mobile-link">Полезное</a></li>
+              <li><a href="" class="mobile-link">Контакты</a></li>
+            </ul>
+            <div class="mobile-icons">
+              <a href="#">
+                <i class="fab fa-youtube" style="color: #fff"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook" style="color: #fff"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram" style="color: #fff"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter" style="color: #fff"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-telegram" style="color: #fff"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </navbar>
+      <div class="header-content">
+        <sidebar class="header-sidebar">
+          <div class="sidebar-icons">
+            <a href="#">
+              <i class="fab fa-youtube" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-telegram" style="color: #fff"></i>
+            </a>
+          </div>
+        </sidebar>
+        <div class="header-banner">
+          <div class="banner-left">
+            <div class="left-content">
+              <img src="./img/banner-logo.png" alt="" class="left-img" />
+              <h1 class="left-title">Digital <br />Government</h1>
+              <div class="lottie-container">
+                <dotlottie-player
+                  src="https://lottie.host/a340d254-1a81-42ec-8755-1fafeb476f03/FCfOCQD0Rm.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+                <dotlottie-player
+                  src="https://lottie.host/21da9f74-50b8-4cd3-a40d-5e03999ef0f4/99EtasXFcz.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </div>
+            </div>
+          </div>
+          <div class="banner-right">
+            <!-- <video src="../../rs-school/fkhamroev-JSFEEN2023Q4/coffee-house/video/" class="rigth-video" autoplay muted></video> -->
+            <img src="./img/banner.png" alt="" class="rigth-video" />
+            <div class="right-content">
+              <h1 class="right-title">Our vision</h1>
+              <p class="right-desc">
+                <span>Digital Uzbekistan 2030</span>: Transforming Uzbekistan
+                into an <span>IT-Hub</span> by boosting IT service exports to
+                <span>5 billion</span> and elevating the country’s position to
+                the <span>top-30</span> in the UN E-Gov Development Index
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-programm">
+        <h1 class="programm-title">Программа развития</h1>
+        <h2 class="programm-subtitle">
+          Документы для ознакомления и скачивания
+        </h2>
+        <div class="programm-cards">
+          <div class="programm-card">
+            <h3 class="card-desc">
+              Стратегия развития цифрового правительства до 2030 года
+              <a href="" download class="card-link">
+                <dotlottie-player
+                  id="myLottie"
+                  src="https://lottie.host/246a7525-c8a2-460a-889c-9134671d4745/SGXMDmVoJZ.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 40px; height: 40px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </a>
+            </h3>
+          </div>
+          <div class="programm-card">
+            <h3 class="card-desc">
+              Белая книга развития электронного правительства и
+              ИКТ-инфраструктуры Узбекистана
+              <a href="" download class="card-link">
+                <dotlottie-player
+                  id="myLottie"
+                  src="https://lottie.host/246a7525-c8a2-460a-889c-9134671d4745/SGXMDmVoJZ.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 40px; height: 40px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </a>
+            </h3>
+          </div>
+          <div class="programm-card">
+            <h3 class="card-desc">
+              презентация ЦЭП по цифровому Узбекистану
+              <a href="" download class="card-link">
+                <dotlottie-player
+                  id="myLottie"
+                  src="https://lottie.host/246a7525-c8a2-460a-889c-9134671d4745/SGXMDmVoJZ.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 40px; height: 40px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="main-history">
+        <h1 class="history-title">Таймлайн истории</h1>
+        <h3 class="history-subtitle">
+          становления цифрового правительства в Узбекистане
+        </h3>
+        <div class="history-overlay">
+          <img src="./img/history.png" alt="" />
+          <svg
+            class="history-svg"
+            width="836"
+            height="1576"
+            viewBox="0 0 836 1576"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.14">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M641.481 249.79L794.59 96.6804C816.519 74.7518 816.519 38.8711 794.59 16.9424C772.662 -4.98082 736.781 -4.98082 714.852 16.9424L87.0276 644.767C65.099 666.696 65.099 702.577 87.0276 724.505C108.956 746.434 144.837 746.434 166.766 724.505L299.471 591.799C321.4 569.871 357.281 569.871 379.209 591.799C401.138 613.728 401.138 649.609 379.209 671.537L63.1945 987.547C41.2658 1009.48 41.2712 1045.36 63.1945 1067.28C85.1231 1089.21 121.004 1089.21 142.932 1067.28L313.033 897.184C334.962 875.256 370.842 875.256 392.771 897.184C414.699 919.113 414.699 954.994 392.771 976.917L383.783 985.905C361.855 1007.83 361.855 1043.71 383.783 1065.64C405.712 1087.57 441.593 1087.57 463.516 1065.64L1223.58 305.588C1245.5 283.659 1245.5 247.779 1223.58 225.85C1201.65 203.927 1165.77 203.927 1143.84 225.85L996.624 373.064C974.695 394.993 938.814 394.993 916.885 373.064C894.957 351.141 894.957 315.26 916.885 293.332L954.061 256.151C975.995 234.222 975.99 198.342 954.061 176.418C932.138 154.49 896.257 154.49 874.328 176.418L721.219 329.528C699.29 351.457 663.409 351.457 641.481 329.528C619.552 307.599 619.552 271.719 641.481 249.79Z"
+                fill="#F6F8F7"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1198.22 954.475C1220.15 976.403 1220.15 1012.28 1198.22 1034.21L735.096 1497.33C713.167 1519.26 677.286 1519.26 655.363 1497.33C633.434 1475.41 633.434 1439.53 655.363 1417.6L772.688 1300.27C794.617 1278.34 794.617 1242.46 772.688 1220.53C750.765 1198.6 714.879 1198.6 692.956 1220.53L354.718 1558.77C332.79 1580.69 296.909 1580.69 274.98 1558.77C253.052 1536.84 253.052 1500.96 274.98 1479.03L1108.83 645.184C1130.76 623.256 1166.64 623.256 1188.57 645.179C1210.5 667.108 1210.5 702.988 1188.57 724.917L1013.52 899.966C991.59 921.895 991.59 957.776 1013.52 979.704C1035.45 1001.63 1071.33 1001.63 1093.26 979.704L1118.48 954.475C1140.41 932.546 1176.29 932.546 1198.22 954.475Z"
+                fill="url(#paint0_linear_202_794)"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M595.184 436.48L748.294 283.37C770.222 261.442 770.222 225.561 748.294 203.638C726.365 181.709 690.484 181.709 668.556 203.638L40.7308 831.457C18.8022 853.386 18.8022 889.267 40.7308 911.195C62.6594 933.124 98.5402 933.124 120.469 911.195L253.175 778.49C275.103 756.561 310.984 756.561 332.913 778.49C354.841 800.418 354.841 836.299 332.913 858.227L16.9031 1174.24C-5.0309 1196.17 -5.02556 1232.05 16.9031 1253.97C38.8263 1275.9 74.7071 1275.9 96.6357 1253.97L266.736 1083.87C288.665 1061.95 324.546 1061.95 346.474 1083.87C368.397 1105.8 368.397 1141.68 346.474 1163.61L337.487 1172.6C315.558 1194.52 315.558 1230.4 337.487 1252.33C359.41 1274.26 395.296 1274.26 417.219 1252.33L1177.27 492.278C1199.2 470.349 1199.2 434.469 1177.27 412.545C1155.35 390.617 1119.47 390.617 1097.54 412.545L950.327 559.754C928.398 581.683 892.518 581.683 870.589 559.754C848.66 537.831 848.66 501.95 870.589 480.022L907.764 442.841C929.693 420.918 929.693 385.037 907.764 363.108C885.841 341.18 849.96 341.18 828.032 363.108L674.922 516.218C652.993 538.147 617.112 538.147 595.184 516.218C573.255 494.29 573.255 458.409 595.184 436.48Z"
+                fill="url(#paint1_linear_202_794)"
+              />
+            </g>
+            <defs>
+              <linearGradient
+                id="paint0_linear_202_794"
+                x1="71.5787"
+                y1="2021.62"
+                x2="1214.66"
+                y2="2021.62"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0094CB" />
+                <stop offset="1" stop-color="#96DCCB" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_202_794"
+                x1="-232.868"
+                y1="1781.33"
+                x2="1193.72"
+                y2="1781.33"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0094CB" />
+                <stop offset="1" stop-color="#96DCCB" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </section>
+      <section class="main-chart">
+        <div id="chart_div"></div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart", "line"] });
+      google.charts.setOnLoadCallback(drawBasic);
+    </script>
+  </body>
+</html>
+
+
+//////
+.header {
+  padding: 40px;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu img {
+  background: #0094cb;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.close-icon {
+  display: none;
+}
+
+.mobile-nav.open .close-icon {
+  display: block;
+}
+
+.mobile-nav.open .burger-icon {
+  display: none;
+}
+
+.header-title,
+.header-link {
+  color: #05071c;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.header-title:nth-child(2) {
+  font-weight: 700;
+}
+
+.header-link {
+  font-size: 20px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  background-color: #05071c;
+  left: 0;
+  width: 0;
+  transition: 500ms;
+  height: 1px;
+}
+
+.header-link:hover::after {
+  width: 100%;
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+.language-switch {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  padding: 15px 0;
+  list-style: none;
+  margin: 0;
+  right: 0;
+}
+
+.language-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 5px;
+}
+
+.language-link:hover {
+  background-color: #f0f0f0;
+}
+
+.active-language {
+  font-size: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.active-language i {
+  transition: transform 0.3s ease;
+}
+
+.fa-arrow-down {
+  transform: rotate(0deg);
+}
+
+.fa-arrow-up {
+  transform: rotate(180deg);
+}
+/* -------- mobile menu --------- */
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10;
+  right: 0;
+  padding: 50px;
+  background: #fff;
+  z-index: 2;
+  width: 0%;
+  display: none;
+  height: 100vh;
+}
+
+.mobile-lang {
+  display: flex;
+  margin: 20px 0;
+}
+
+.lang-link {
+  color: #0094cb;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 8px;
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.lang-link-active {
+  background: #0094cb;
+  color: white;
+}
+
+.mobile-link {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.mobile-link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background: #dadada;
+  bottom: 0;
+}
+
+.mobile-icons i {
+  background: linear-gradient(to right, #0094cb, #fff);
+  padding: 10px;
+  border-radius: 100%;
+  transition: 500ms;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* --------------- sidebar------------ */
+.header-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  width: 80px;
+}
+
+.sidebar-icons {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-icons i {
+  font-size: 18px;
+  background: #6b6b6bb3;
+  padding: 15px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+  transition: 500ms;
+}
+
+.sidebar-icons i:hover {
+  background: #000;
+  transform: scale(1.1);
+}
+
+/* --------- header- banner ------ */
+
+.header-content {
+  display: flex;
+  height: 750px;
+  padding-right: 0;
+  margin-top: 20px;
+}
+
+.header-banner {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.banner-left {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  align-items: flex-end;
+  width: 40%;
+  justify-content: center;
+  position: relative;
+}
+
+.lottie-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left-content {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.left-img {
+  width: 70px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.left-title {
+  font-size: 28px;
+  margin-left: 17px;
+}
+
+.banner-right {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.banner-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.right-content {
+  position: absolute;
+  bottom: 15%;
+  left: 100px;
+  width: 70%;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+.rigth-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.right-title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.right-desc {
+  font-size: 20px;
+}
+
+.right-desc span {
+  font-weight: 700;
+}
+
+/* --------- cards -------- */
+.main-programm {
+  padding: 40px 100px;
+}
+
+.programm-title {
+  color: #0094cb;
+  font-size: 40px;
+}
+
+.programm-subtitle {
+  color: #090a0d;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.programm-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.programm-card {
+  min-height: 190px;
+  height: 100%;
+  border: 1px solid #dadada;
+  padding: 40px;
+  position: relative;
+}
+
+.card-desc {
+  font-size: 22px;
+  line-height: 26px;
+  color: #090a0d;
+  text-transform: capitalize;
+}
+
+.card-link {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+/* ------ history------ */
+.main-history {
+  margin-top: 150px;
+  position: relative;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 40px;
+  color: #0094cb;
+  text-transform: uppercase;
+}
+
+.history-subtitle {
+  font-size: 24px;
+  color: #090a0d;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.history-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.history-overlay img {
+  position: absolute;
+  bottom: 350px;
+  right: 0;
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="icon" href="./img/logo.png" type="image/png" />
+    <title>Digital Government</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="sidebar">
+          <a href="#"
+            ><img src="./img/logo.png" alt="" class="sidebar-logo"
+          /></a>
+          <div class="sidebar-icons">
+            <a href="#">
+              <i class="fab fa-youtube" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-telegram" style="color: #fff"></i>
+            </a>
+          </div>
+        </div>
+        <nav class="header-nav">
+          <a href="#" class="header-title"
+            >ЦифровоЕ правительствО <br />
+            <span>Республики Узбекистан</span></a
+          >
+          <ul class="header-menu">
+            <li><a href="#" class="header-link">Главная</a></li>
+            <li><a href="#" class="header-link">Решения</a></li>
+            <li><a href="#" class="header-link">Рейтиги</a></li>
+            <li><a href="#" class="header-link">Контакты</a></li>
+            <div class="dropdown-center">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ру
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Uz</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+                <li><a class="dropdown-item" href="#">Ру</a></li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+        <div class="header-mobile">
+          <div>
+            <a href="#"><img src="./img/logo.png" alt="" /></a>
+            <h1 class="mobile-title">
+              ЦифровоЕ правительство <br /><span>Республики Узбекистан</span>
+            </h1>
+          </div>
+          <button id="changeSrcBtn">
+            <img src="./img/Shape.png" alt="" />
+          </button>
+        </div>
+        <div class="menu-container">
+          <div class="lang-btns">
+            <button class="lang-btn">O'z</button>
+            <button class="lang-btn">En</button>
+            <button class="lang-btn lang-btn-active">Ру</button>
+          </div>
+          <ul class="mobile-links">
+            <li><a href="#" class="mobile-link">Главная</a></li>
+            <li><a href="#" class="mobile-link">Решения</a></li>
+            <li><a href="#" class="mobile-link">Рейтиги</a></li>
+            <li><a href="#" class="mobile-link">Контакты</a></li>
+            <li><a href="#" class="mobile-link">Библиотека</a></li>
+          </ul>
+          <div class="mobile-icons">
+            <a href="#">
+              <i class="fab fa-youtube" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter" style="color: #fff"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-telegram" style="color: #fff"></i>
+            </a>
+          </div>
+        </div>
+        <section class="header-banner">
+          <div class="banner-left">
+            <dotlottie-player
+              class="left-animation"
+              src="./js/banner.json"
+              background="transparent"
+              speed="2"
+              loop=""
+              autoplay=""
+            ></dotlottie-player>
+            <img src="./img/digital-banner.png" alt="" class="left-img" />
+          </div>
+          <div class="banner-right">
+            <video
+              src="./video/banner-video.mp4"
+              class="right-video"
+              autoplay
+              muted
+              loop
+            ></video>
+            <div class="right-content">
+              <h1 class="right-title">Our vision</h1>
+              <p class="right-desc">
+                <span>Digital Uzbekistan 2030</span>: Transforming Uzbekistan
+                into an <span>IT-Hub</span> by boosting IT service exports to
+                <span>5 billion</span> and elevating the country’s position to
+                the <span>top-30</span> in the UN E-Gov Development Index
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="mobile-banner">
+          <img src="./img/banner.png" alt="" class="mobile-img" />
+          <div class="mobile-content">
+            <h1 class="mobile-tit">Our vision</h1>
+            <p class="mobile-desc">
+              <i>Digital Uzbekistan 2030:</i> Transforming Uzbekistan into an
+              <i>IT-Hub</i> by boosting IT service exports to
+              <i>5 billion</i> and elevating the country’s position to the
+              <i>top-30</i> in the UN E-Gov Development Index
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="main-history">
+          <h1 class="history-title">Программа развития</h1>
+          <h3 class="history-subtitle">
+            Документы для ознакомления и скачивания
+          </h3>
+          <div class="history-cards">
+            <div class="card">
+              <p class="card-desc">
+                Стратегия развития цифрового правительства до 2030 года
+              </p>
+              <a href="#" download="./img/logo.png" class="card-link">
+                <dotlottie-player
+                  src="https://lottie.host/8f554cb0-9bf2-421f-9b35-0d2579e365da/7WBmil1EsW.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 30px; height: 40px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </a>
+            </div>
+            <div class="card">
+              <p class="card-desc">
+                Белая книга развития электронного правительства и
+                ИКТ-инфраструктуры Узбекистана
+              </p>
+              <a href="#" download="./img/logo.png" class="card-link">
+                <dotlottie-player
+                  src="https://lottie.host/8f554cb0-9bf2-421f-9b35-0d2579e365da/7WBmil1EsW.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 30px; height: 40px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </a>
+            </div>
+            <div class="card">
+              <p class="card-desc">презентация ЦЭП по цифровому Узбекистану</p>
+              <a href="#" download="./img/logo.png" class="card-link">
+                <dotlottie-player
+                  src="https://lottie.host/8f554cb0-9bf2-421f-9b35-0d2579e365da/7WBmil1EsW.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 30px; height: 40px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="main-timeline">
+          <h1 class="timeline-title">Таймлайн истории</h1>
+          <p class="timeline-subtitle">
+            становления цифрового правительства в Узбекистане
+          </p>
+          <div class="timeline-after">
+            <ul class="timeline-steps">
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">1997</p>
+                <p class="info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">2002</p>
+                <p class="info">
+                  развитие компьютеризации и внедрение информационных систем
+                </p>
+              </li>
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">2013</p>
+                <p class="info">начало развития Электронного правительства</p>
+              </li>
+              <span class="timeline-line"></span>
+            </ul>
+            <ul class="timeline-steps1">
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">1997</p>
+                <p class="info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">2002</p>
+                <p class="info">
+                  развитие компьютеризации и внедрение информационных систем
+                </p>
+              </li>
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">2013</p>
+                <p class="info">начало развития Электронного правительства</p>
+              </li>
+              <li class="timeline-step">
+                <p class="desc">01 <br />step</p>
+                <span class="dot"></span>
+                <p class="year">2013</p>
+                <p class="info">начало развития Электронного правительства</p>
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-mobile">
+            <img src="./img/timeline-mobile.png" alt="">
+            <ul class="mobile-steps">
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+              <li class="mobile-step">
+                <p class="mobile-desc">01 <br />step</p>
+                <span class="mobile-dot"></span>
+                <p class="mobile-year">1997</p>
+                <p class="mobile-info">
+                  развитие и совершенствование почтовой связи, информационных
+                  систем и телекоммуникаций
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-chart">
+          <h1 class="chart-title">позиция Узбекистана</h1>
+          <h3 class="chart-subtitle">
+            в Индексе развития электронного <br />правительства ООН
+          </h3>
+          <img src="./img/chart-mobile.png" alt="" class="mobile-chart">
+          <div class="chart-content">
+            <div id="myChart"></div>
+          </div>
+          <div class="chart-apr">
+            <h1 class="apr-title">
+              Aпробация <br /><span>государственных услуг</span>
+            </h1>
+            <ul class="apr-steps">
+              <li class="step-li">
+                <div class="step-name">
+                  <h1 class="step-title">Шаг 1</h1>
+                  <dotlottie-player
+                    src="./js/svg-to-lottie (2).json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 90px; height: 90px"
+                    loop=""
+                    autoplay=""
+                  ></dotlottie-player>
+                </div>
+                <img src="./img/right.svg" alt="" class="step-img" />
+                <p class="step-desc">Протестируйте услугу</p>
+              </li>
+              <li class="step-li">
+                <div class="step-name">
+                  <h1 class="step-title">Шаг 2</h1>
+                  <dotlottie-player
+                    src="./js/svg-to-lottie (1).json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 80px; height: 80px"
+                    loop=""
+                    autoplay=""
+                  ></dotlottie-player>
+                </div>
+                <img src="./img/right.svg" alt="" class="step-img" />
+                <p class="step-desc">Оцените удобство и простоту оказания</p>
+              </li>
+              <li class="step-li">
+                <div class="step-name">
+                  <h1 class="step-title">Шаг 3</h1>
+                  <dotlottie-player
+                    src="./js/svg-to-lottie.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 90px; height: 90px"
+                    loop=""
+                    autoplay=""
+                  ></dotlottie-player>
+                </div>
+                <img src="./img/right.svg" alt="" class="step-img" />
+                <p class="step-desc">Дайте предложения по улучшению</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-news">
+          <a href="#" class="news-title">Новости</a>
+          <div class="news-content">
+            <div class="news-card">
+              <img src="./img/news.png" alt="" class="news-img" />
+              <div class="card-content">
+                <div class="card-info">
+                  <p class="card-timeInfo">20 <span>ЯНв</span></p>
+                  <a href="#" class="card-tit">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </div>
+                <p class="card-descr">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur ipsum molestias illo tempore magnam corrupti eos
+                  doloribus exercitationem hic consectetur, ipsa illum explicabo
+                  recusandae optio beatae esse similique asperiores! Veniam at
+                  eum incidunt magnam totam rerum beatae sit accusamus, esse
+                  repellendus cum consectetur dolore velit libero earum,
+                  veritatis quam placeat?
+                </p>
+                <div class="card-extra">
+                  <p class="card-time">02.12.2023</p>
+                  <a href="#" class="card-extraLink">Экономика</a>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <img src="./img/news.png" alt="" class="news-img" />
+              <div class="card-content">
+                <div class="card-info">
+                  <p class="card-timeInfo">20 <span>ЯНв</span></p>
+                  <a href="#" class="card-tit">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </div>
+                <p class="card-descr">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur ipsum molestias illo tempore magnam corrupti eos
+                  doloribus exercitationem hic consectetur, ipsa illum explicabo
+                  recusandae optio beatae esse similique asperiores! Veniam at
+                  eum incidunt magnam totam rerum beatae sit accusamus, esse
+                  repellendus cum consectetur dolore velit libero earum,
+                  veritatis quam placeat?
+                </p>
+                <div class="card-extra">
+                  <p class="card-time">02.12.2023</p>
+                  <a href="#" class="card-extraLink">Экономика</a>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <img src="./img/news.png" alt="" class="news-img" />
+              <div class="card-content">
+                <div class="card-info">
+                  <p class="card-timeInfo">20 <span>ЯНв</span></p>
+                  <a href="#" class="card-tit">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </div>
+                <p class="card-descr">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur ipsum molestias illo tempore magnam corrupti eos
+                  doloribus exercitationem hic consectetur, ipsa illum explicabo
+                  recusandae optio beatae esse similique asperiores! Veniam at
+                  eum incidunt magnam totam rerum beatae sit accusamus, esse
+                  repellendus cum consectetur dolore velit libero earum,
+                  veritatis quam placeat?
+                </p>
+                <div class="card-extra">
+                  <p class="card-time">02.12.2023</p>
+                  <a href="#" class="card-extraLink">Экономика</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-projects">
+          <img src="./img/footer.png" alt="" class="projects-img" />
+          <ul class="projects-content container">
+            <li class="project-info">
+              <h1 class="info-number">256</h1>
+              <span class="info-span">Веб сайтов</span>
+            </li>
+            <li class="project-info">
+              <h1 class="info-number">30</h1>
+              <span class="info-span">Организаций</span>
+            </li>
+            <li class="project-info">
+              <h1 class="info-number">56</h1>
+              <span class="info-span">Систем</span>
+            </li>
+            <li class="project-info">
+              <h1 class="info-number">24</h1>
+              <span class="info-span">Мобильных приложений</span>
+            </li>
+          </ul>
+        </section>
+        <section class="mobile-projects">
+          <!-- <img src="./img/footer-mobile.png" alt="" class="mobilepro-img"> -->
+        </section>
+      </div>
+    </main>
+    <footer class="footer container">
+      <a href="#"
+        ><h1 class="footer-title">
+          ЦифровоЕ правительствО <br />
+          <span>Республики Узбекистан</span>
+        </h1>
+      </a>
+      <div class="footer-imgs">
+        <a href="#"
+          ><img src="./img/rus vazirlik.png" alt="" class="footer-img"
+        /></a>
+        <a href="#"
+          ><img src="./img/rus EGOV LOGO.png" alt="" class="footer-img"
+        /></a>
+        <a href="#"
+          ><img src="./img/uzinfocom.png" alt="" class="footer-img"
+        /></a>
+      </div>
+      <p class="footer-copy">© 2020-2022 все права защищены</p>
+      <p class="footer-desc">
+        Внимание! Если Вы нашли ошибку в тексте, выделите её и нажмите
+        Ctrl+Enter для уведомления администрации
+      </p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
