@@ -87,25 +87,42 @@ Highcharts.chart("myChart", {
       },
     },
   ],
+  responsive: {
+    rules: [
+      {
+        condition: {
+          maxWidth: 768, // Apply the following options if screen width <= 768px
+        },
+        chartOptions: {
+          chart: {
+            marginLeft: 120, // Adjust margins to accommodate for labels
+            marginRight: 120,
+            width: null,
+            height: null,
+          },
+          xAxis: {
+            scrollbar: {
+              enabled: true, // Enable scrollbar on X-axis
+            },
+            labels: {
+              step: 1, // Display all labels to prevent overcrowding
+            },
+          },
+        },
+      },
+    ],
+  },
 });
 
 // -----------------
-window.addEventListener("resize", function () {
-  const sidebar = document.querySelector(".sidebar");
-  const container = document.querySelector(".container");
+window.addEventListener("resize", () => {
+  const chart = Highcharts.charts[0]; // Get the chart instance
+  const chartContainer = document.querySelector(".chart-container");
 
-  if (window.innerWidth >= 1800) {
-    const containerRect = container.getBoundingClientRect();
-    sidebar.style.left = containerRect.left - 140 + "px";
-    sidebar.style.marginRight = "80px";
-  } else {
-    sidebar.style.left = "0";
-    sidebar.style.marginRight = "0";
+  if (chart && chartContainer) {
+    const chartWidth = chartContainer.offsetWidth; // Get the container width
+    chart.setSize(chartWidth, null); // Set the chart width
   }
-});
-
-window.addEventListener("load", function () {
-  window.dispatchEvent(new Event("resize"));
 });
 
 // ----------------- menu
@@ -123,21 +140,17 @@ changeSrcBtn.addEventListener("click", () => {
   }
 });
 
-
-
-const btn = document.getElementById('changeSrcBtn');
-const menu = document.querySelector('.menu-container');
+const btn = document.getElementById("changeSrcBtn");
+const menu = document.querySelector(".menu-container");
 const body = document.body;
 
-btn.addEventListener('click', function() {
-  menu.classList.toggle('active');
-  body.classList.toggle('menu-open');
+btn.addEventListener("click", function () {
+  menu.classList.toggle("active");
+  body.classList.toggle("menu-open");
 
-  if (body.classList.contains('menu-open')) {
-    // Disable scrolling
-    body.style.overflow = 'hidden';
+  if (body.classList.contains("menu-open")) {
+    body.style.overflow = "hidden";
   } else {
-    // Enable scrolling
-    body.style.overflow = 'auto';
+    body.style.overflow = "auto";
   }
 });
