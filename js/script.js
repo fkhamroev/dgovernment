@@ -122,3 +122,22 @@ changeSrcBtn.addEventListener("click", () => {
     menuContainer.style.display = "none";
   }
 });
+
+
+
+const btn = document.getElementById('changeSrcBtn');
+const menu = document.querySelector('.menu-container');
+const body = document.body;
+
+btn.addEventListener('click', function() {
+  menu.classList.toggle('active');
+  body.classList.toggle('menu-open');
+
+  if (body.classList.contains('menu-open')) {
+    // Disable scrolling
+    body.style.overflow = 'hidden';
+  } else {
+    // Enable scrolling
+    body.style.overflow = 'auto';
+  }
+});

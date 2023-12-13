@@ -80,6 +80,43 @@
         display: block;
     }
 
+
+    .chart-apr {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+
+    .apr-steps {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .step-li {
+        flex: 0 0 auto;
+        padding: 15px;
+    }
+
+    .step-li::after {
+        content: '';
+        position: absolute;
+        background: url(../img/step_before.svg) no-repeat;
+        height: 100%;
+        width: 100%;
+        bottom: 20px;
+        left: 0px;
+    }
+
+    .apr-steps::before {
+        content: '';
+        background: #52B8DE;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 0;
+    }
+
     .main-chart {
         display: flex;
         align-items: center;
@@ -91,7 +128,7 @@
     }
 
     .mobile-steps,
-    .chart-apr .apr-steps {
+    .apr-steps {
         overflow-x: auto;
         overflow-y: hidden;
     }
@@ -116,6 +153,8 @@
 
     .history-cards {
         grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+        margin: 0 auto;
     }
 
     .card:nth-child(3) {
@@ -136,12 +175,12 @@
         text-align: center;
     }
 
-    .chart-apr .apr-steps {
+    .apr-steps {
         display: flex;
         overflow-x: auto;
     }
 
-    .chart-apr .apr-steps .step-li {
+    .apr-steps .step-li {
         flex: 0 0 auto;
     }
 
@@ -239,8 +278,12 @@
         font-size: 14px;
     }
 
-    .apr-title {
-        text-align: center;
+    .apr-title,
+    .chart-title,
+    .chart-subtitle,
+    .timeline-title,
+    .timeline-subtitle {
+        text-align: left;
     }
 
 }
