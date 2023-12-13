@@ -1,0 +1,180 @@
+<section class="test-line">
+      <ul class="test-timeline">
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой систем и телекоммуникаций
+          </p>
+        </li>
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой связи, информационных систем и
+            телекоммуникаций
+          </p>
+        </li>
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой связи, информационных систем и
+            телекоммуникаци йразвитие и совершенствование почтовой связи,
+            информационных систем и телекоммуникаций
+          </p>
+        </li>
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой связи, информационных систем и
+            телекоммуникаций
+          </p>
+        </li>
+        <span class="test-connector"></span>
+      </ul>
+      <ul class="test-timeline">
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой систем и телекоммуникаций
+          </p>
+        </li>
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой связи, информационных систем и
+            телекоммуникаций
+          </p>
+        </li>
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой связи, информационных систем и
+            телекоммуникаци йразвитие и совершенствование почтовой связи,
+            информационных систем и телекоммуникаций
+          </p>
+        </li>
+        <li class="test-li">
+          <p class="test-step">01 <br />step</p>
+          <span class="test-dot"></span>
+          <p class="test-year">1997</p>
+          <p class="test-desc">
+            развитие и совершенствование почтовой связи, информационных систем и
+            телекоммуникаций
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    ---------------------------------
+    
+/* test  */
+.test-line {
+  display: none;
+}
+
+.test-timeline {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  position: relative;
+
+}
+
+.test-step {
+  font-family: "Inter";
+  font-weight: 700;
+  text-align: center;
+}
+
+.test-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.test-dot {
+  display: table;
+  background-image: linear-gradient(171deg,
+      #0094cb 0%,
+      #4acf78 71%,
+      #0094cb 100%);
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  /* position: relative; */
+}
+
+.test-dot::after {
+  content: '';
+  position: absolute;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="2" width="90" viewBox="0 0 100 2"><line x1="0" y1="1" x2="100" y2="1" stroke="%230094cb" stroke-width="2" stroke-dasharray="4" /></svg>');
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 2px;
+  top: 30%;
+  z-index: -1;
+}
+
+
+.test-li:nth-child(4) .test-dot:after {
+  content: '';
+  position: absolute;
+  background: url(../img/line-end.png) no-repeat;
+  width: 90px;
+  background-position: center;
+  height: 100%;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+}
+
+
+.test-year {
+  font-family: "Inter";
+  font-weight: 700;
+  color: #0094CB;
+  margin-top: 10px;
+}
+
+.test-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-align: center;
+}
+
+.test-connector {
+  width: 100%;
+  height: 2px;
+}
+
+.test-connector::after {
+  content: '';
+  position: absolute;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="2" width="90" viewBox="0 0 100 2"><line x1="0" y1="1" x2="100" y2="1" stroke="%230094cb" stroke-width="2" stroke-dasharray="4" /></svg>');
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 2px;
+  bottom: -25px;
+  left: 0;
+}

@@ -154,3 +154,22 @@ btn.addEventListener("click", function () {
     body.style.overflow = "auto";
   }
 });
+
+// sideber
+window.addEventListener("resize", function () {
+  const sidebar = document.querySelector(".sidebar");
+  const container = document.querySelector(".container");
+
+  if (window.innerWidth >= 1800) {
+    const containerRect = container.getBoundingClientRect();
+    sidebar.style.left = containerRect.left - 140 + "px";
+    sidebar.style.marginRight = "80px"; // Добавим отступ справа
+  } else {
+    sidebar.style.left = "0";
+    sidebar.style.marginRight = "0"; // Установим обратно в 0 при уменьшении экрана
+  }
+});
+
+window.addEventListener("load", function () {
+  window.dispatchEvent(new Event("resize"));
+});

@@ -30,6 +30,26 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
 body::-webkit-scrollbar {
   width: 5px;
@@ -267,6 +287,7 @@ body::-webkit-scrollbar-thumb {
   padding: 40px;
   margin-top: 30px;
   position: relative;
+  border-radius: 0;
 }
 
 .card-desc {
@@ -1105,18 +1126,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mobile-link:hover {
-  height: 2px;
-}
-
-.mobile-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0px;
-  background: #000;
-
+  text-decoration: underline;
 }
 
 .mobile-link {
@@ -1178,83 +1188,3 @@ body::-webkit-scrollbar-thumb {
   object-fit: cover;
 }
 
-
-/* test  */
-.test-line {
-  display: none;
-}
-
-.test-timeline {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-evenly; */
-}
-
-.test-step {
-  font-family: "Inter";
-  font-weight: 700;
-  text-align: center;
-}
-
-.test-li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 200px;
-  width: 100%;
-  position: relative;
-}
-
-.test-dot {
-  display: table;
-  background-image: linear-gradient(171deg,
-      #0094cb 0%,
-      #4acf78 71%,
-      #0094cb 100%);
-  border-radius: 50%;
-  width: 19px;
-  height: 19px;
-  /* position: relative; */
-}
-
-.test-dot::after {
-  content: '';
-  position: absolute;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="2" width="90" viewBox="0 0 100 2"><line x1="0" y1="1" x2="100" y2="1" stroke="%230094cb" stroke-width="2" stroke-dasharray="4" /></svg>');
-  width: 100%;
-  background-position: center;
-  background-repeat: repeat-x;
-  height: 2px;
-  top: 30%;
-  z-index: -1;
-}
-
-
-
-
-.test-year {
-  font-family: "Inter";
-  font-weight: 700;
-  color: #0094CB;
-  margin-top: 10px;
-}
-
-.test-desc {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-  text-align: center;
-}
-
-.test-connector {
-  width: 20px;
-  /* Ширина вашего полукруга */
-  height: 20px;
-  /* Высота вашего полукруга */
-  position: absolute;
-  right: 0;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="transparent" stroke="%230094cb" stroke-width="2" stroke-dasharray="4" /></svg>');
-  background-color: #0094cb;
-}
