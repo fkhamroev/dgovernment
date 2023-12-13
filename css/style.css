@@ -965,6 +965,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 29px;
   color: #0094cb;
   margin-top: 20px;
+  font-weight: 700;
 }
 
 .mobile-info {
@@ -976,6 +977,12 @@ body::-webkit-scrollbar-thumb {
   margin-top: 10px;
   text-overflow: ellipsis;
   padding: 0 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-align: center;
 }
 
 .mobile-dot::after {
@@ -1027,6 +1034,7 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   margin-top: 15px;
   display: none;
+  margin-right: 10px;
 }
 
 .mobile-content {
@@ -1049,7 +1057,7 @@ body::-webkit-scrollbar-thumb {
 
 .mobile-desc {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .mobile-desc i {
@@ -1061,7 +1069,8 @@ body::-webkit-scrollbar-thumb {
   display: none;
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 100;
+  background: white;
 }
 
 .lang-btns {
@@ -1154,6 +1163,10 @@ body::-webkit-scrollbar-thumb {
 
 
 /* test  */
+.test-line {
+  display: none;
+}
+
 .test-timeline {
   display: flex;
   align-items: center;
@@ -1216,4 +1229,15 @@ body::-webkit-scrollbar-thumb {
   -webkit-line-clamp: 4;
   overflow: hidden;
   text-align: center;
+}
+
+.test-connector {
+  width: 20px;
+  /* Ширина вашего полукруга */
+  height: 20px;
+  /* Высота вашего полукруга */
+  position: absolute;
+  right: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="transparent" stroke="%230094cb" stroke-width="2" stroke-dasharray="4" /></svg>');
+  background-color: #0094cb;
 }

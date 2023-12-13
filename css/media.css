@@ -48,6 +48,7 @@
     .main-chart::before {
         content: none;
     }
+
     .chart-content {
         padding-left: 0;
     }
@@ -68,6 +69,7 @@
 
     body {
         padding-left: 80px;
+        /* overflow: hidden; */
     }
 
     .timeline-mobile {
@@ -137,12 +139,10 @@
     .chart-apr .apr-steps {
         display: flex;
         overflow-x: auto;
-        padding-bottom: 5px;
     }
 
     .chart-apr .apr-steps .step-li {
         flex: 0 0 auto;
-        padding: 0 10px;
     }
 
     .news-content {
@@ -167,10 +167,16 @@
 
     body {
         padding-left: 0;
+        margin-right: 10px;
     }
+
 
     .card:nth-child(3) {
         justify-self: auto;
+    }
+
+    .card {
+        min-height: 100px;
     }
 
     .header-mobile,
@@ -201,4 +207,46 @@
         grid-column: 1;
     }
 
+    .mobile-title,
+    .mobile-desc,
+    .history-subtitle,
+    .card-desc,
+    .timeline-subtitle,
+    .chart-subtitle,
+    .step-desc,
+    .step-title,
+    .card-time,
+    .card-extraLink,
+    .footer-title,
+    .footer-copy,
+    .mobile-year {
+        font-size: 16px;
+    }
+
+    .mobile-tit,
+    .history-title,
+    .timeline-title,
+    .chart-title,
+    .apr-title,
+    .news-title {
+        font-size: 30px;
+    }
+
+    .footer-desc,
+    .mobile-title,
+    .apr-title span,
+    .mobile-info {
+        font-size: 14px;
+    }
+
+    .apr-title {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:540px) {
+    .mobile-dot::after {
+        width: 240px;
+    }
 }
