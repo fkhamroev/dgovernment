@@ -202,9 +202,7 @@
         display: none;
     }
 
-    .lang-btns {
-        width: 30%;
-    }
+
 
     body {
         padding-left: 0;
@@ -288,9 +286,5 @@
 @media (max-width:540px) {
     .mobile-dot::after {
         width: 240px;
-    }
-
-    .lang-btns {
-        width: 50%;
     }
 }
