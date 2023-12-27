@@ -3,6 +3,7 @@
 :root {
   --font-main: "Montserrat";
   --font-second: "Inter";
+
 }
 
 * {
@@ -12,6 +13,11 @@
 }
 
 a {
+  text-decoration: none;
+  color: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 
@@ -26,8 +32,10 @@ li {
 
 body {
   font-family: var(--font-main);
-  padding-left: 140px;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
+  line-height: normal;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
 }
 
 h1,
@@ -67,7 +75,6 @@ body::-webkit-scrollbar-thumb {
 .container {
   max-width: 1400px;
   width: 100%;
-  padding-right: 70px;
   margin: 0 auto;
   position: relative;
 }
@@ -92,6 +99,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   z-index: 2;
   margin: 0 auto;
+  z-index: 999;
 }
 
 .sidebar-icons {
@@ -100,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-.sidebar-icons i {
+.sidebar-icons img {
   background: #aaaaaa;
   border-radius: 71px;
   text-align: center;
@@ -108,14 +116,15 @@ body::-webkit-scrollbar-thumb {
   padding: 15px;
   margin-bottom: 20px;
   transition: all 0.5s ease-out;
+  color: white;
 }
 
-.sidebar-icons i:hover {
+.sidebar-icons img:hover {
   transform: scale(1.2);
 }
 
 .header-nav {
-  padding-top: 40px;
+  padding: 40px 15px 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -188,19 +197,13 @@ body::-webkit-scrollbar-thumb {
 /* ----------- header banner ------- */
 
 .header-banner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin-top: 40px;
-  padding: 0 15px;
+  display: flex;
 }
 
-.banner-left,
-.banner-right {
-  width: 100%;
-  box-sizing: border-box;
-}
 
 .banner-left {
+  width: 900px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -216,12 +219,15 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   object-fit: contain;
   top: 50%;
-  left: 10px;
+  left: -50px;
   transform: translate(-50%, -50%);
 }
 
 .left-img {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  height: 90px;
+  width: 460px;
+  object-fit: contain;
 }
 
 .banner-right {
@@ -231,9 +237,9 @@ body::-webkit-scrollbar-thumb {
 
 .right-content {
   position: absolute;
-  width: 70%;
-  left: 50px;
-  bottom: 70px;
+  width: 493px;
+  left: 10 6px;
+  bottom: 76px;
   color: #fff;
   padding: 30px 50px;
 }
@@ -244,6 +250,8 @@ body::-webkit-scrollbar-thumb {
 
 .right-desc {
   font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat";
 }
 
 .right-desc span {
@@ -266,6 +274,7 @@ body::-webkit-scrollbar-thumb {
 .history-title {
   color: #0094cb;
   font-size: 40px;
+  font-weight: 700;
 }
 
 .history-subtitle {
@@ -285,9 +294,10 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   border: 1px solid #dadada;
   padding: 40px;
-  margin-top: 30px;
   position: relative;
   border-radius: 0;
+  background: white;
+  z-index: 1;
 }
 
 .card-desc {
@@ -301,6 +311,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   bottom: 10px;
   right: 10px;
+
 }
 
 /* -------- main-timeline -------- */
@@ -314,6 +325,7 @@ body::-webkit-scrollbar-thumb {
   background: url("../img/test-side.png") no-repeat;
   max-width: 1240px;
   width: 100%;
+  height: 100%;
   height: 1575px;
   position: absolute;
   top: 40%;
@@ -322,6 +334,8 @@ body::-webkit-scrollbar-thumb {
   margin-left: 750px;
   background-size: cover;
   background-position: center;
+  pointer-events: none;
+
 }
 
 .timeline-svg {
@@ -331,18 +345,26 @@ body::-webkit-scrollbar-thumb {
   overflow-x: visible;
 }
 
+.timeline-after {
+  max-width: 1050px;
+  width: 100%;
+}
+
 .timeline-title {
   color: #0094cb;
   font-size: 40px;
-  text-align: center;
-  margin-right: auto;
+  text-align: right;
   font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .timeline-subtitle {
   color: #090a0d;
   font-size: 24px;
   text-align: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .timeline-steps {
@@ -351,7 +373,6 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(3, 1fr);
   position: relative;
   margin-bottom: 80px;
-  width: 70%;
 }
 
 .timeline-steps1 {
@@ -367,15 +388,12 @@ body::-webkit-scrollbar-thumb {
   content: '';
   position: absolute;
   bottom: 40px;
-  left: 5px;
+  left: 8px;
   background: url(../img/line-start.png) no-repeat;
   width: 100%;
   height: 100%;
 }
 
-.timeline-steps1 .timeline-step:nth-child(4) .dot::after {
-  width: 50px;
-}
 
 .timeline-steps1 .timeline-step:nth-child(1) .dot::before {
   content: "";
@@ -389,17 +407,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* 
-.timeline-steps::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  background: url(../img/line.png) repeat-x;
-  width: 85%;
-  height: 2px;
-  transform: translate(-50%, -50%);
-} */
+
 
 .timeline-line::after {
   content: '';
@@ -411,8 +419,6 @@ body::-webkit-scrollbar-thumb {
   height: 2px;
   transform: translate(-50%, -50%);
 }
-
-
 
 .timeline-step {
   display: flex;
@@ -458,7 +464,7 @@ body::-webkit-scrollbar-thumb {
   top: calc(10% + 60px);
   /* left: 50%; */
   width: 60px;
-  margin-left: 75px;
+  margin-left: 85px;
   height: 100%;
 }
 
@@ -467,7 +473,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   background: url(../img/line.png) repeat-x;
   top: calc(10% + 60px);
-  right: 80px;
+  right: 90px;
   width: 80px;
   margin-left: 180px;
   height: 2px;
@@ -503,23 +509,24 @@ body::-webkit-scrollbar-thumb {
 /* --------- chart ----------- */
 .main-chart {
   position: relative;
-  margin-top: 100px;
+  margin-top: 230px;
 }
 
 .main-chart::before {
   content: '';
-  background: url("../img/left_side.png") no-repeat;
-  max-width: 1166px;
+  background: url("../img/chart-mobile.png") no-repeat;
+  max-width: 1165px;
   width: 100%;
   height: 1166px;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
-  margin-left: -80%;
-  overflow: visible;
-  background-size: cover;
+  margin-left: -65%;
+  background-size: contain;
   background-position: center;
+  pointer-events: none;
+  overflow: visible;
 }
 
 .chart-content {
@@ -535,34 +542,46 @@ body::-webkit-scrollbar-thumb {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .chart-subtitle {
-  text-align: right;
+  align-items: center;
+  margin-left: 50px;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
+  text-align: right;
 }
 
 #myChart {
   margin-top: 80px;
   min-width: 700px;
-  width: 100%;
+  /* width: 100%; */
   height: 300px;
+  margin-left: 180px;
 }
 
 .mobile-chart {
   display: none;
+  width: 100%;
+  padding-bottom: 50px;
+  object-fit: cover;
 }
 
 .chart-apr {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  margin-top: 140px;
+  gap: 200px;
   justify-content: space-between;
+  margin-top: 140px;
 }
 
 .apr-title {
@@ -570,9 +589,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 40px;
   font-weight: 700;
   text-align: right;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
+  justify-self: flex-start;
 }
 
 .apr-title span {
@@ -584,8 +603,9 @@ body::-webkit-scrollbar-thumb {
 .apr-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 100px;
   position: relative;
+  margin-top: 100px;
 }
 
 .apr-steps::before {
@@ -609,11 +629,13 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
 }
 
+
+
 .step-li::after {
   content: '';
   position: absolute;
   background: url(../img/step_before.svg) no-repeat;
-  height: 100%;
+  height: 80px;
   width: 100%;
   top: -80px;
   left: -10px;
@@ -630,8 +652,7 @@ body::-webkit-scrollbar-thumb {
   height: 41px;
   margin-bottom: 15px;
   background: linear-gradient(247deg, #0094cb 0%, #96dccb 100%);
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px 0 0 15px;
 }
 
 .step-li span {
@@ -658,6 +679,7 @@ body::-webkit-scrollbar-thumb {
 .step-img {
   width: 46px;
   height: 46px;
+  margin-bottom: 14px;
 }
 
 /*-------- news ---------*/
@@ -699,15 +721,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .news-card {
-  border-radius: 20px;
   border: 1px solid #E1E1E1;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
-.news-card::after {
+.news-img {
+  width: 100%;
+  position: relative;
+  transition: 500ms;
+}
+
+.card-overlay {
   content: '';
   position: absolute;
   top: 0;
@@ -715,12 +744,16 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.55);
   width: 100%;
   height: 80%;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
-.news-img {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+.news-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.news-card:hover .news-img {
+  transform: scale(1.1);
 }
 
 .card-content {
@@ -783,6 +816,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 4;
+  margin-top: 20px;
 }
 
 .card-extra {
@@ -798,7 +832,7 @@ body::-webkit-scrollbar-thumb {
 .card-extraLink {
   border-bottom: 1px solid transparent;
   font-size: 18px;
-  color: #013E8D;
+  color: #0094CB;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -808,24 +842,26 @@ body::-webkit-scrollbar-thumb {
 
 
 .card-extraLink:hover {
-  border-bottom: 1px solid #013E8D;
+  border-bottom: 1px solid #0094CB;
 }
 
 /* -------- main - projects ----------- */
 .main-projects {
-  /* background: url("../img/footer.png"); */
+  position: relative;
+  /* background-image: url("../img/footer.png"); */
   background-size: cover;
   background-position: center;
-  position: relative;
-  /* height: 900px; */
+  height: 900px;
   width: 100%;
+
 }
 
 .projects-img {
   height: 900px;
   width: 100%;
+  position: absolute;
+  z-index: 9;
 }
-
 
 .main-projects::after {
   content: '';
@@ -837,6 +873,7 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
+  pointer-events: none;
 }
 
 .projects-content {
@@ -847,6 +884,7 @@ body::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  gap: 190px;
 }
 
 
@@ -875,6 +913,7 @@ body::-webkit-scrollbar-thumb {
 /* ------------ footer ----------- */
 .footer {
   text-align: center;
+  margin-top: -20px;
 }
 
 
@@ -927,6 +966,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
   color: #0C0C0C;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 
@@ -935,13 +975,26 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   align-items: center;
   display: none;
+  position: relative;
 }
 
 .timeline-mobile img {
   width: 100%;
-  max-height: 700px;
-  object-fit: contain;
+  max-height: 500px;
+  object-fit: cover;
 }
+
+/* .timeline-mobile::after {
+  content: '';
+  background: url(../img/timeline-mobile.png) no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 
 .mobile-steps {
   display: flex;
@@ -1142,6 +1195,8 @@ body::-webkit-scrollbar-thumb {
 .lang-btn-active {
   background: #0094CB;
   color: white;
+  border: 1px solid #0094cb;
+
 }
 
 .mobile-links li {
@@ -1188,27 +1243,32 @@ body::-webkit-scrollbar-thumb {
   transition: all linear 0.2s;
 }
 
-.mobile-projects {
-  display: none;
-  height: 800px;
-  position: relative;
-  margin-bottom: 50px;
 
+.footer {
+  position: relative;
 }
 
-.mobile-projects::after {
+
+.main-projects::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  background: url(../img/footer-mobile.png) no-repeat center;
-  width: 100%;
-  height: 1200px;
-
+  transform: translate(-50%, -50%);
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position: center;
+  height: 900px;
+  pointer-events: none;
 }
 
-.mobilepro-img {
-  width: 100%;
-  object-fit: cover;
+.header-nav,
+.header-banner,
+.main-history,
+.main-timeline,
+.main-chart,
+.main-news,
+.main-projects {
+  /* margin-left: 40px; */
 }

@@ -1,5 +1,5 @@
 const years = ["2010", "2012", "2014", "2016", "2018", "2020", "2022"];
-const values = [87, 91, 100, 80, 81, 87, 69];
+const values = [87, 91, 100, 80, 81, 87, 69].reverse();
 
 Highcharts.chart("myChart", {
   chart: {
@@ -33,14 +33,14 @@ Highcharts.chart("myChart", {
       text: "",
     },
     labels: {
-      style: {
-        fontFamily: "Inter",
-
-        fontSize: "24px",
-        color: "black",
-        fontWeight: "700",
-        lineHeight: "29px",
-      },
+      // style: {
+      //   fontFamily: "Inter",
+      //   fontSize: "24px",
+      //   color: "black",
+      //   fontWeight: "700",
+      //   lineHeight: "29px",
+      // },
+      enabled:false,
     },
     gridLineWidth: 0,
     lineColor: "transparent",
@@ -163,10 +163,10 @@ window.addEventListener("resize", function () {
   if (window.innerWidth >= 1800) {
     const containerRect = container.getBoundingClientRect();
     sidebar.style.left = containerRect.left - 140 + "px";
-    sidebar.style.marginRight = "80px"; // Добавим отступ справа
+    sidebar.style.marginRight = "80px"; 
   } else {
     sidebar.style.left = "0";
-    sidebar.style.marginRight = "0"; // Установим обратно в 0 при уменьшении экрана
+    sidebar.style.marginRight = "0";
   }
 });
 

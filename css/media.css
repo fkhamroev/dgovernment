@@ -8,6 +8,11 @@
         overflow: hidden;
     }
 
+    .main-timeline:after {
+        max-width: 900px;
+        overflow: hidden;
+    }
+
     .chart-apr {
         display: flex;
         flex-direction: column;
@@ -17,16 +22,8 @@
         margin-bottom: 50px;
     }
 
-    .banner-left,
-    .timeline-after {
-        display: none;
-    }
 
     .header-banner {
-        display: flex;
-    }
-
-    .timeline-mobile {
         display: flex;
     }
 
@@ -57,6 +54,11 @@
 @media (max-width:980px) {
     .header-nav {
         flex-direction: column;
+    }
+
+    .main-timeline,
+    .main-chart {
+        margin-top: 24px;
     }
 
     .header-title {
@@ -132,6 +134,10 @@
         overflow-y: hidden;
     }
 
+    .mobile-step {
+        padding-bottom: 15px;
+    }
+
     .mobile-steps::-webkit-scrollbar,
     .chart-apr .apr-steps::-webkit-scrollbar,
     .chart-content::-webkit-scrollbar {
@@ -154,8 +160,11 @@
 
     .history-cards {
         grid-template-columns: repeat(2, 1fr);
-        width: 75%;
         margin: 0 auto;
+    }
+
+    .card {
+        padding: 16px;
     }
 
     .card:nth-child(3) {
@@ -198,11 +207,12 @@
     .sidebar,
     .header-nav,
     .header-banner,
-    .main-projects {
+    /* .main-projects, */
+    .timeline-steps,
+    .timeline-steps1,
+    .projects-content {
         display: none;
     }
-
-
 
     body {
         padding-left: 0;
@@ -215,13 +225,25 @@
 
     .card {
         min-height: 100px;
+        display: flex;
+        flex-direction: column-reverse;
     }
+
+    .card-link {
+        position: relative;
+    }
+
+    .card:nth-child(1) {
+        margin-top: 16px;
+    }
+
 
     .header-mobile,
     .mobile-banner,
     .mobile-projects {
         display: flex;
     }
+
 
     .mobile-dot::after {
         width: 350px;
@@ -257,12 +279,18 @@
     .card-extraLink,
     .footer-title,
     .footer-copy,
-    .mobile-year,
+
     .footer-desc,
     .mobile-title,
     .apr-title span,
     .mobile-info {
         font-size: 14px;
+    }
+
+
+    .mobile-desc {
+        margin-bottom: 12px;
+        line-height: 16px;
     }
 
     .mobile-tit,
@@ -280,6 +308,96 @@
     .timeline-title,
     .timeline-subtitle {
         text-align: left;
+    }
+
+    .timeline-title {
+        justify-content: start;
+    }
+
+    .card-content {
+        padding: 15px;
+        max-height: 246px;
+    }
+
+    .news-img {
+        max-height: 228px;
+        object-fit: cover;
+    }
+
+    .card-timeInfo {
+        font-size: 21px;
+        min-height: 55px;
+        max-width: 60px;
+        padding: 0;
+    }
+
+    .card-descr {
+        margin-top: 15px;
+    }
+
+    .main-history {
+        margin-top: 25px;
+    }
+
+    .chart-subtitle,
+    .timeline-subtitle {
+        margin-left: 0;
+        justify-content: start;
+    }
+
+    .main-chart {
+        align-items: start;
+    }
+
+    #myChart {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .chart-apr {
+        align-items: start;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .apr-title {
+        margin-bottom: 0;
+    }
+
+    .apr-steps {
+        margin-top: 15px;
+        gap: 0;
+    }
+
+    .main-news {
+        margin: 30px 0;
+    }
+
+    .news-content {
+        gap: 15px;
+    }
+
+    .mobile-projects {
+        margin-top: 0;
+    }
+
+    .main-projects {
+        margin-top: 25px;
+    }
+
+    .main-projects::after {
+        background-size: contain;
+        top: 20%;
+    }
+
+    .footer {
+        margin-top: -100px;
+    }
+
+    .step-li::before {
+        top: -60px;
+        z-index: 99;
+        background-size: contain;
     }
 }
 
