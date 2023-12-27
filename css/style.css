@@ -34,8 +34,7 @@ body {
   font-family: var(--font-main);
   /* overflow-x: hidden !important; */
   line-height: normal;
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
+
 }
 
 h1,
@@ -77,6 +76,9 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding: 0 15px;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
 }
 
 /* ----- side bar ------- */
@@ -1118,6 +1120,11 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   margin-top: 15px;
   display: none;
+}
+
+.mobile-img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .mobile-content {

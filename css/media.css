@@ -202,21 +202,75 @@
     }
 }
 
+@media (max-width:810px) {
+
+    .banner-left,
+    .projects-content,
+    .timeline-steps,
+    .timeline-steps1,
+    .timeline-mobile img,
+    .mobile-chart {
+        display: none;
+    }
+
+    .main-timeline,
+    .mobile-steps,
+    .main-chart,
+    .chart-apr,
+    .history-cards,
+    .main-news,
+    .main-projects {
+        margin-top: 40px;
+    }
+
+    .main-chart {
+        align-items: flex-end;
+    }
+
+    .chart-apr {
+        align-items: start;
+        gap: 0;
+    }
+
+    .apr-title {
+        text-align: left;
+    }
+
+    #myChart {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .apr-steps {
+        margin-top: 15px;
+        gap: 0;
+    }
+
+    .main-projects::after {
+        background-size: contain;
+        top: 20%;
+    }
+
+}
+
 @media (max-width:790px) {
 
     .sidebar,
     .header-nav,
     .header-banner,
-    /* .main-projects, */
-    .timeline-steps,
-    .timeline-steps1,
     .projects-content {
         display: none;
     }
 
     body {
         padding-left: 0;
+        overflow-x: hidden;
+    }
+    .header-mobile button  {
         margin-right: 10px;
+    }
+    .mobile-desc {
+        text-align: justify;
     }
 
     .card:nth-child(3) {
@@ -349,10 +403,6 @@
         align-items: start;
     }
 
-    #myChart {
-        margin-left: 0;
-        margin-top: 50px;
-    }
 
     .chart-apr {
         align-items: start;
@@ -364,10 +414,7 @@
         margin-bottom: 0;
     }
 
-    .apr-steps {
-        margin-top: 15px;
-        gap: 0;
-    }
+
 
     .main-news {
         margin: 30px 0;
@@ -385,10 +432,7 @@
         margin-top: 25px;
     }
 
-    .main-projects::after {
-        background-size: contain;
-        top: 20%;
-    }
+
 
     .footer {
         margin-top: -100px;
@@ -399,16 +443,20 @@
         z-index: 99;
         background-size: contain;
     }
+
     .footer-copy {
         font-size: 16px;
     }
+
     .footer-img {
         width: 176px;
     }
+
     .footer-imgs {
         gap: 20px;
         margin-top: 30px;
     }
+
     .footer-desc {
         margin-top: 15px;
         padding-bottom: 30px;
