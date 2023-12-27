@@ -919,7 +919,7 @@ body::-webkit-scrollbar-thumb {
 
 .footer-title {
   color: #05071C;
-  font-size: 19px !important;
+  font-size: 19px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
