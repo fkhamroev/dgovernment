@@ -32,7 +32,7 @@ li {
 
 body {
   font-family: var(--font-main);
-  /* overflow-x: hidden !important; */
+  overflow-x: hidden !important;
   line-height: normal;
 
 }
@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   height: 100vh;
   padding: 35px 20px;
-  width: 140px;
+  /* width: 140px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -228,7 +228,7 @@ body::-webkit-scrollbar-thumb {
 .left-img {
   margin-bottom: 150px;
   height: 90px;
-  width: 460px;
+  max-width: 460px;
   object-fit: contain;
 }
 
@@ -916,6 +916,8 @@ body::-webkit-scrollbar-thumb {
 .footer {
   text-align: center;
   margin-top: -20px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -939,15 +941,21 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   margin-top: 60px;
   align-items: center;
-  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.footer-imgs a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-img {
   object-fit: contain;
-  max-width: 300px;
+  max-width: 270px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
@@ -1274,7 +1282,6 @@ body::-webkit-scrollbar-thumb {
 .main-history,
 .main-timeline,
 .main-chart,
-.main-news,
-.main-projects {
-  /* margin-left: 40px; */
+.main-news {
+  margin-left: 40px;
 }
