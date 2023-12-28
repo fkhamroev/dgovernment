@@ -1,3 +1,15 @@
+@media (max-width:1400px) {
+    .header-nav,
+    .header-banner,
+    .main-history,
+    .main-timeline,
+    .main-chart,
+    .main-news {
+        padding-left: 70px;
+    }
+ }
+
+
 @media (max-width:1200px) {
 
     .main-timeline,
@@ -32,14 +44,22 @@
     .main-history,
     .main-timeline,
     .main-chart,
-    .main-news,
+    .main-news {
+        padding-left: 90px;
+        padding-right: 10px;
+    }
+
     .footer {
-        margin-left: 90px;
-        margin-right: 10px;
+        padding-left: 90px;
     }
 
     .main-timeline {
         margin-right: 0;
+    }
+
+    .timeline-title,
+    .timeline-subtitle {
+        margin-right: 15px;
     }
 
     .projects-content {
@@ -55,11 +75,6 @@
         flex-direction: column;
         gap: 50px;
     }
-
-    .apr-title {
-        margin-bottom: 50px;
-    }
-
 
     .header-banner {
         display: flex;
@@ -87,6 +102,12 @@
         margin-right: 10px;
     }
 
+    .main-projects::after {
+        background-size: contain;
+        top: 20%;
+        margin-top: 150px;
+        width: 80%;
+    }
 
 }
 
@@ -123,7 +144,7 @@
     .main-chart,
     .main-news,
     .footer {
-        margin-left: 0px;
+        padding-left: 0px;
     }
 
 
@@ -132,7 +153,6 @@
     .projects-content,
     .timeline-steps,
     .timeline-steps1,
-    .timeline-mobile img,
     .mobile-chart {
         display: none;
     }
@@ -159,6 +179,7 @@
 
     .apr-title {
         text-align: left;
+
     }
 
     #myChart {
@@ -169,11 +190,6 @@
     .apr-steps {
         margin-top: 15px;
         gap: 0;
-    }
-
-    .main-projects::after {
-        background-size: contain;
-        top: 20%;
     }
 
     .main-chart::before,
@@ -187,8 +203,8 @@
     .main-timeline,
     .main-chart,
     .main-news {
-        margin-left: 80px;
-        margin-right: 10px;
+        padding-left: 80px;
+        padding-right: 10px;
     }
 
     .header-banner {
@@ -212,6 +228,7 @@
 
     .mobile-chart {
         display: block;
+        padding-bottom: 0;
     }
 
     .chart-apr {
@@ -306,13 +323,8 @@
     }
 
     .footer-imgs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
     }
-
-
 
     .apr-steps {
         display: flex;
@@ -349,8 +361,12 @@
     .main-timeline,
     .main-chart,
     .main-news {
-        margin-left: 0px;
-        margin-right: 10px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .main-news {
+        margin-bottom: 25px;
     }
 
     .header-mobile,
@@ -527,12 +543,6 @@
     .mobile-projects {
         margin-top: 0;
     }
-
-    .main-projects {
-        margin-top: 25px;
-    }
-
-
 
     .footer {
         margin-top: -100px;

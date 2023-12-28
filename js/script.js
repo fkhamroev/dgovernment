@@ -156,22 +156,23 @@ btn.addEventListener("click", function () {
 });
 
 // sideber
-// window.addEventListener("resize", function () {
-//   const sidebar = document.querySelector(".sidebar");
-//   const container = document.querySelector(".container");
+window.addEventListener("resize", function () {
+  const sidebar = document.querySelector(".sidebar");
+  const container = document.querySelector(".container");
 
-//   if (window.innerWidth >= 1800) {
-//     const containerRect = container.getBoundingClientRect();
-//     sidebar.style.left = containerRect.left - 140 + "px";
-//     sidebar.style.marginRight = "80px"; 
-//   } else {
-//     sidebar.style.left = "0";
-//     sidebar.style.marginRight = "0";
-//   }
-// });
+  if (window.innerWidth >= 1800) {
+    const containerRect = container.getBoundingClientRect();
+    const sidebarWidth = sidebar.offsetWidth;
 
-// window.addEventListener("load", function () {
-//   window.dispatchEvent(new Event("resize"));
-// });
+    sidebar.style.left = containerRect.left - sidebarWidth + "px";
+    sidebar.style.marginRight = "80px"; 
+  } else {
+    sidebar.style.left = "0";
+    sidebar.style.marginRight = "0";
+  }
+});
 
+window.addEventListener("load", function () {
+  window.dispatchEvent(new Event("resize"));
+});
 
