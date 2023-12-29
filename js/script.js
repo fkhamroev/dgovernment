@@ -1,5 +1,5 @@
 const years = ["2010", "2012", "2014", "2016", "2018", "2020", "2022"];
-const values = [87, 91, 100, 80, 81, 87, 69].reverse();
+const values = [87, 91, 100, 80, 81, 87, 69];
 
 Highcharts.chart("myChart", {
   chart: {

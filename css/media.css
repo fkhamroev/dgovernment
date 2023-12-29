@@ -35,7 +35,7 @@
     .main-timeline:after {
         height: 800px;
         background-size: contain;
-        margin-left: 600px;
+        margin-left: 700px;
         z-index: -1;
     }
 
@@ -166,6 +166,10 @@
     .main-news,
     .main-projects {
         margin-top: 40px;
+    }
+
+    .timeline-mobile::after {
+        margin-left: 100px;
     }
 
     .main-chart {
@@ -376,6 +380,10 @@
     .main-news {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .timeline-mobile::after {
+        margin-left: 0px;
     }
 
     .mobile-chart {
